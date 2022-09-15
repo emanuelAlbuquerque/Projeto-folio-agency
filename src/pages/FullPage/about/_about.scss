@@ -1,0 +1,161 @@
+@import '../../../styles/base/variaveis';
+
+
+#about_body {
+  width: 100vw;
+  height: 150vh;
+
+  .about {
+    width: 100%;
+    background-color: $botao-menu-toggle;
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 0;
+
+    .container_about {
+      width: 100%;
+      height: 100%;
+
+      .container_about_titulo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 40%;
+
+        .line {
+          padding: 0 1.5rem;
+          width: 45%;
+          display: flex;
+          justify-content: space-between;
+          align-self: flex-start;
+
+          .line__numero-pagina {
+            font-size: .875rem;
+            font-weight: 600;
+            color: $cor-font-ciza-medio;
+          }
+
+          .line__nome-pagina {
+            font-size: .875rem;
+            font-weight: 600;
+            color: $branco;
+          }
+        }
+
+        .options_title {
+          width: 85%;
+          margin: 0 auto;
+          display: flex;
+          flex-direction: column;
+
+          .about__titulo {
+            margin: 1.5rem 0;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: $branco;
+          }
+
+          .slide_bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+
+            #passar_pagina_about {
+              .passar {
+                padding: 1rem;
+              }
+            }
+
+            .input_slide {
+              select {
+                border: none;
+                color: $branco;
+                background: transparent;
+                padding: 3rem;
+                font-size: 12px;
+              }
+            }
+          }
+        }
+
+      }
+
+      .img-about {
+        width: 100%;
+        max-width: 638px;
+      }
+
+      .about_description_container {
+        height: 60%;
+        width: 85%;
+        margin: 3em auto 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .about_description {
+
+
+          .about_description_titulo {
+            font-size: 24px;
+            font-weight: 700;
+            color: $branco;
+          }
+
+          .about_description_texto {
+            font-size: 1rem;
+            font-weight: 400;
+            color: $cor-font-cinza-medio-escuro;
+            margin: 2rem 0;
+          }
+
+          .about_description_botao {
+            margin-top: 1rem;
+            width: 40%;
+            padding: 1.2rem 1.2rem;
+            text-align: center;
+            background-color: $azul-claro;
+            text-decoration: none;
+            color: $branco;
+            font-weight: 700;
+            border-radius: 8px;
+          }
+        }
+
+        .about_description_numero {
+          width: 19.375rem;
+          height: 19.375rem;
+          border-radius: 50%;
+          box-shadow: 0px 23px 51px rgba(0, 0, 0, 0.242297);
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          margin-top: 3rem;
+
+          .numero {
+            font-size: 8.75rem;
+            font-weight: 600;
+            color: $branco;
+
+          }
+
+          .descriprion_numero {
+            font-weight: 600;
+            font-size: 1.125rem
+              /* 18px -> 1.125rem */
+            ;
+            color: $branco;
+          }
+
+        }
+      }
+    }
+  }
+
+  .footer_about {
+    margin-top: 4rem;
+  }
+}
