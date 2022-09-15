@@ -1,0 +1,136 @@
+@import '../../../styles/base/variaveis';
+
+.body_services {
+  width: 100vw;
+  height: 300vh;
+
+  .container_services {
+    background: linear-gradient(360deg, rgba(255, 255, 255, 0.0001) 0%, rgba(237, 229, 240, 0.504289) 100%);
+    width: 100%;
+    height: 100%;
+
+    .what-wo-do {
+      width: 85%;
+      margin: 0 auto;
+      height: 20%;
+
+      .marca_pagina {
+        height: 100%;
+      }
+    }
+
+    .container_what-we-do__cards {
+      width: 100%;
+      height: 45%;
+      margin-top: 2rem;
+      background-image: url(../assets/line-servises-1.svg);
+      background-repeat: no-repeat;
+      background-position: bottom;
+
+      .container_cards {
+        width: 85%;
+        height: 100%;
+        margin: 0 auto;
+
+        .cards-list {
+          display: flex;
+          flex-direction: column;
+
+          .list {
+            margin-bottom: 1rem;
+            background-color: $branco;
+            padding: 3rem 2rem;
+            border-radius: 24px;
+
+            .list-link {
+              text-decoration: none;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+
+              p {
+                margin-left: 1rem;
+                color: $azul-claro;
+                font-weight: 600;
+                font-size: 1.125rem;
+              }
+            }
+
+            &:hover {
+              background-color: $azul-claro;
+
+              .list-link {
+                p {
+                  color: $branco;
+
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .achievement {
+      width: 100%;
+      height: 50%;
+      display: flex;
+      flex-direction: column;
+
+      .container_achievement {
+        width: 85%;
+        margin: 0 auto;
+
+        .marca_pagina {
+          width: 75%;
+          height: 100%;
+
+          .pagina {
+            font-size: 14px;
+            font-weight: 600;
+            color: $botao-menu-toggle;
+
+            span {
+              margin-right: 1rem;
+              color: $cor-font-cinza-medio-escuro;
+            }
+          }
+
+          .nome_pagina {
+            margin: 2rem 0;
+            font-size: 1.5rem;
+            font-weight: 700;
+          }
+
+          .numero {
+            font-size: 8.75rem;
+            color: $azul-claro;
+            font-weight: 600;
+          }
+
+          .sucesso {
+            margin-top: .5rem;
+            margin-bottom: 2rem;
+            font-size: 1.125rem;
+            font-weight: 600;
+            color: #000000;
+          }
+        }
+      }
+
+      .navegation {
+        width: 100%;
+        max-width: 70px;
+        max-height: 12px;
+        height: 100%;
+
+        a {
+          width: 12px;
+          height: 100%;
+          background-color: $branco;
+          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.30171);
+        }
+      }
+    }
+  }
+}
