@@ -1,0 +1,114 @@
+@import '../../base/variaveis';
+
+.cabecalho {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 15vh;
+  width: 85%;
+  margin: 0 auto;
+
+  .logo-menu-aberto,
+  .redes-sociais__menu,
+  .cabecalho__nav {
+    display: none;
+  }
+
+  .menu_toggle {
+    width: 32px;
+
+    .one,
+    .two {
+      background-color: $botao-menu-toggle;
+      height: 2px;
+      width: 100%;
+      margin: 6px 0;
+    }
+  }
+
+  .on {
+    width: 100vw;
+    height: 100vh;
+
+    background-color: $botao-menu-toggle;
+    background-image: url(../assets/line-menu.svg);
+    background-repeat: no-repeat;
+    background-position: top 0 right 0px;
+
+    z-index: 10;
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .cabecalho__nav {
+      display: block;
+      width: 85%;
+      margin: 0 auto;
+
+      .nav__list {
+        .nav__list-item {
+          &:not(:first-child) {
+            margin-top: 2rem;
+          }
+
+          .nav__list-item-link {
+            text-decoration: none;
+            font-size: 2rem;
+            font-weight: none;
+            font-family: $font-primaria;
+            color: white;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+
+    .botoes_menu {
+      width: 85%;
+      margin: 2rem auto 2rem auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      img {
+        display: block;
+      }
+
+      .menu_toggle {
+
+        .one,
+        .two {
+          background-color: #ffffff;
+        }
+
+        .one {
+          transform: rotate(45deg) translate(5px);
+        }
+
+        .two {
+          transform: rotate(135deg) translate(-6px);
+        }
+      }
+    }
+
+    .redes-sociais__menu {
+      width: 85%;
+      margin: 0 auto;
+      display: flex;
+
+      img {
+        padding: 1rem;
+        border-radius: 50%;
+        border: 1px solid $cor-borda-cinza;
+        margin-right: 1rem;
+        margin-bottom: 3rem;
+      }
+    }
+  }
+}
