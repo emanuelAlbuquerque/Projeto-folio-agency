@@ -1,0 +1,63 @@
+@import '../../../styles/base/variaveis';
+
+.body_cta {
+  width: 100vw;
+  height: 165vh;
+
+  #cta {
+    height: 150vh;
+    width: 85%;
+    margin: 0 auto;
+
+
+    .cta_container {
+      height: 90%;
+      width: 100%;
+      margin: 0 auto;
+      border-radius: 25px;
+      background-color: $azul-claro;
+      position: relative;
+      z-index: 1;
+
+      .rosa {
+        position: absolute;
+        bottom: -55px;
+        right: -25px;
+        z-index: -1;
+      }
+
+
+      .marca_pagina {
+        display: block;
+        height: 40%;
+        justify-content: space-evenly;
+        width: 85%;
+        margin: 0 0 0 auto;
+
+        .pagina {
+          padding-top: 3rem;
+          color: $branco;
+        }
+
+        .nome_pagina {
+          margin: 2rem 0 1rem 0;
+          color: $branco;
+        }
+
+        .passa_pagina {
+          margin-bottom: 2rem;
+        }
+
+        .apply-now {
+
+          background-color: $branco;
+          text-decoration: none;
+          color: $azul-claro;
+          font-weight: 600;
+          padding: 1rem 1.5rem;
+          border-radius: 8px;
+        }
+      }
+    }
+  }
+}
