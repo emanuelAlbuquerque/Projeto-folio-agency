@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../../../styles/style.css" />
     <title>Jobs</title>
   </head>
-  <body class="body_jobs">
+  <body id="body_jobs">
     <div class="container_jobs">
       <header class="cabecalho">
         <img
@@ -31,16 +31,28 @@
           <nav class="cabecalho__nav">
             <ul class="nav__list">
               <li class="nav__list-item">
-                <a href="" class="nav__list-item-link">Work</a>
+                <a href="../work/work.html" class="nav__list-item-link">Work</a>
               </li>
               <li class="nav__list-item">
-                <a href="" class="nav__list-item-link">About</a>
+                <a
+                  href="../../../pages/FullPage/about/about.html"
+                  class="nav__list-item-link"
+                  >About</a
+                >
               </li>
               <li class="nav__list-item">
-                <a href="" class="nav__list-item-link">Services</a>
+                <a
+                  href="../page-services/_services.scss"
+                  class="nav__list-item-link"
+                  >Services</a
+                >
               </li>
               <li class="nav__list-item">
-                <a href="" class="nav__list-item-link">Jobs</a>
+                <a
+                  href="../cta/cta.html"
+                  class="nav__list-item-link notificacao"
+                  >Jobs</a
+                >
               </li>
             </ul>
           </nav>
@@ -50,30 +62,46 @@
             <img src="../../../assets/instagram.svg" alt="" />
           </div>
         </div>
+        <div class="botao">
+          <a
+            href="https://www.figma.com/fil/Fe3HfgtPa0z2mNsCA2Rosk/Folio-Agency-1.0-(Community)-(Copy)?node-id=0%3A695"
+            class="conect-us_header"
+            >Contact Us</a
+          >
+        </div>
       </header>
 
       <section id="jobs">
         <div class="marca_pagina">
-          <p class="pagina">05. We are hiring</p>
+          <p class="pagina">
+            <img src="../../../assets/logo-symbol.svg" alt="" /> 05. We are
+            hiring
+          </p>
           <h1 class="nome_pagina">Jobs</h1>
           <p class="descricao_pagina">
             Agency is a full-service agency, busy designing and building
             beautiful digital products, brands, and experiences.
           </p>
           <div class="passa_pagina">
-            <a href="#" class="passar">
+            <a href="../cta/cta.html" class="passar">
               <img
                 src="../../../assets/arrow-down.svg"
                 alt="Seta para voltar"
               />
             </a>
-            <a href="#" class="passar" id="seta-passar">
+            <a href="../Footer/footer.html" class="passar" id="seta-passar">
               <img
                 src="../../../assets/arrow-after.svg"
                 alt="Seta para passar"
               />
             </a>
           </div>
+          <a href="#" class="swiper">
+            <div class="botao_swiper">
+              <img src="../../../assets/arrow-s-jobs.svg" alt="" />
+            </div>
+            <swiper class="descricao">Available Jobs</swiper>
+          </a>
         </div>
         <div class="container_jobs-cards">
           <ul class="cards-list">
@@ -106,7 +134,7 @@
               /></a>
             </li>
             <li class="list">
-              <a href="" class="list-link"
+              <a href="#" class="list-link"
                 ><h2 class="nome_card">Art Director</h2>
                 <p class="requisitos">2 years experience</p>
                 <img
@@ -119,7 +147,7 @@
               /></a>
             </li>
             <li class="list">
-              <a href="" class="list-link"
+              <a href="#" class="list-link"
                 ><h2 class="nome_card">Web Designer</h2>
                 <p class="requisitos">2 years experience</p>
                 <img
@@ -144,12 +172,17 @@
                 alt="Icone de mensagem"
                 class="icone_mensagem"
               />
+              <img
+                src="../../../assets/logo-rosa.svg"
+                alt="Logo pequeno rosa"
+                class="logo-rosa"
+              />
               <div class="hello">
                 <div class="hello_cumprimento">
                   <img
                     src="../../../assets/emoji-footer.svg"
                     alt="Emoli de comprimentar"
-                    class="emoji"
+                    id="emoji"
                   />
                   <p class="texto">Say hello</p>
                 </div>
@@ -159,22 +192,83 @@
               </div>
             </div>
             <div class="footer_next">
-              <h2 class="footer_chamada">Let’s talk about your next project</h2>
-              <a href="" class="footer_botao">Contact Us</a>
+              <div class="esquerda">
+                <div class="container_esquerda">
+                  <h2 class="footer_chamada">
+                    Let’s talk about your next project
+                  </h2>
+                </div>
+                <a
+                  href="https://www.figma.com/fil/Fe3HfgtPa0z2mNsCA2Rosk/Folio-Agency-1.0-(Community)-(Copy)?node-id=0%3A695"
+                  class="footer_botao"
+                  >Contact Us</a
+                >
+              </div>
+              <div class="direita">
+                <div class="direita_container">
+                  <img
+                    src="../../../assets/mensagem-footer.svg"
+                    alt="Icone de mensagem"
+                    class="icone_mensagem"
+                  />
+                  <div class="botao_passar">
+                    <h2 class="footer_frase">Invest in your designs today!</h2>
+                    <a href="#" class="botao_card"
+                      ><img src="../../../assets/arrow-after.svg" alt=""
+                    /></a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
+
           <div class="footer_redes-sociais">
             <img
               src="../../../assets/light-mode.svg"
               alt=""
               class="footer_logo"
             />
-            <p class="footer_descricao">
-              Agency is a full-service agency, busy designing and building.
+            <p class="footer_descricao_mobile">
+              Agency is a full-service agency, busy designing and building
+              beautiful digital
             </p>
+            <p class="footer_descricao_desktop">
+              Agency is a full-service agency, busy designing and building
+              beautiful digital products, brands, and experiences.
+            </p>
+
             <select name="" class="footer_select">
               <option value="home">Home</option>
             </select>
+            <nav class="cabecalho__nav">
+              <ul class="nav__list">
+                <li class="nav__list-item">
+                  <a
+                    href="../work/work.html"
+                    class="nav__list-item-link"
+                    id="azul"
+                    >Work</a
+                  >
+                </li>
+                <li class="nav__list-item">
+                  <a href="../about/about.html" class="nav__list-item-link"
+                    >About</a
+                  >
+                </li>
+                <li class="nav__list-item">
+                  <a
+                    href="../page-services/services.html"
+                    class="nav__list-item-link"
+                    >Services</a
+                  >
+                </li>
+                <li class="nav__list-item">
+                  <a href="../jobs/jobs.html" class="nav__list-item-link"
+                    >Jobs</a
+                  >
+                </li>
+              </ul>
+            </nav>
             <div class="footer_copyrite">
               <div class="footer_copyrire-rede-social">
                 <div class="backgroud-img" id="facebook">
@@ -200,6 +294,29 @@
                 </div>
               </div>
               <p class="copyrite">© 2020, UI8 LLC.</p>
+            </div>
+            <div class="footer_copyrite_desktop">
+              <p class="copyrite">© 2020, UI8 LLC.</p>
+              <div class="follow">
+                <p class="follow_text">Follow us</p>
+                <img
+                  src="../../../assets/logo-facebook-cinza.svg"
+                  alt="Logo do facebbok"
+                  class="logo_rede-social_footer"
+                />
+
+                <img
+                  src="../../../assets/logo-youtube_footer.svg"
+                  alt="Logo do toutube"
+                  class="logo_rede-social_footer"
+                />
+
+                <img
+                  src="../../../assets/logo-instagram_footer.svg"
+                  alt="Logo do instagram"
+                  class="logo_rede-social_footer"
+                />
+              </div>
             </div>
           </div>
         </div>

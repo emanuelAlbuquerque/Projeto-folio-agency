@@ -1,122 +1,211 @@
 @import '../../../styles/base/variaveis';
 
-.body_work {
+#body_work {
   width: 100vw;
-  height: 490vh;
-}
-
-#work {
-  width: 85%;
-  margin: 0 auto 2rem auto;
-  height: 100%;
-
-  .marca_pagina {
-    height: 10%;
-  }
-
-  .container_cards {
-    height: 80%;
-    width: 100%;
-    margin-top: 2rem;
-
-    .list_cards {
-      width: 100%;
-      height: 100%;
 
 
-      .list_item {
-        width: 100%;
-        max-width: 315px;
-        height: 100%;
-        max-height: 585px;
+  #work {
+    width: 85%;
+    margin: 0 auto 2rem auto;
+    height: 100%;
 
+    .marca_pagina {
+      height: 10%;
 
-        .card_laranja {
-          background-color: #FFBA79;
+      .pagina {
+        .logo-rosa-work {
+          display: none;
+        }
+      }
+
+      .titulo-pagina_footer {
+        height: 40%;
+        display: flex;
+        flex-direction: column;
+        margin: 1rem 0;
+
+        .botao_marca-oagina {
+          display: none;
         }
 
-        .card_lilas {
-          background-color: #E8BEFF;
+        .nome_pagina {
+          margin-bottom: 1rem;
         }
 
-        .card_amarelo {
-          background-color: #FFCE79;
-        }
-
-        .carde_azul-claro {
-          background-color: #D1ECFD;
-          ;
-        }
-
-        .header_cards {
-          border-radius: 17px;
-          height: 100%;
-          max-height: 355px;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          position: relative;
-
-          .card_product {
-            background-color: #908CFF;
-            padding: .5rem;
-            border-radius: 15px;
-            text-decoration: none;
-            color: $branco;
-            font-size: .625rem;
-            font-weight: 600;
-            position: absolute;
-            bottom: 20px;
-            left: 30px;
+        .passa_pagina {
+          .passar {
+            padding: 1rem;
           }
         }
       }
-
-      .titulo_card {
-        margin-top: 1rem;
-        font-size: 24px;
-        font-weight: 700;
-        color: $botao-menu-toggle;
-      }
-
-      .descricao_card {
-        margin: 2rem 0;
-        font-size: 1rem
-          /* 16px -> 1rem */
-        ;
-        font-weight: 400;
-        color: $cor-font-text-cinza;
-      }
-
-      .botao_passar {
-        width: 48px;
-        height: 48px;
-        border-radius: 50%;
-        border: 1px solid black;
-
-        .botao_card {
-          width: 100%;
-          height: 100%;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-        }
-      }
-
     }
+
+    .container_cards {
+      height: 100%;
+      width: 100%;
+      margin-top: 2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .list_cards {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .list_item {
+          width: 100%;
+          max-width: 315px;
+          height: 100%;
+          max-height: 585%;
+
+
+
+          .card_laranja {
+            background-color: #FFBA79;
+          }
+
+          .card_lilas {
+            background-color: #E8BEFF;
+          }
+
+          .card_amarelo {
+            background-color: #FFCE79;
+          }
+
+          .carde_azul-claro {
+            background-color: #D1ECFD;
+            ;
+          }
+
+          .header_cards {
+            width: 100%;
+            border-radius: 17px;
+            height: 60%;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+
+            img {
+              width: 100%;
+            }
+
+            .card_product {
+              background-color: #908CFF;
+              padding: .5rem;
+              border-radius: 15px;
+              text-decoration: none;
+              color: $branco;
+              font-size: .625rem;
+              font-weight: 600;
+              position: absolute;
+              bottom: 20px;
+              left: 30px;
+            }
+          }
+        }
+
+        .titulo_card {
+          margin-top: 1rem;
+          font-size: 24px;
+          font-weight: 700;
+          color: $botao-menu-toggle;
+        }
+
+        .descricao_card {
+          margin: 2rem 0;
+          font-size: 1rem
+            /* 16px -> 1rem */
+          ;
+          font-weight: 400;
+          color: $cor-font-text-cinza;
+        }
+
+        .botao_passar {
+          width: 48px;
+          height: 48px;
+          border-radius: 50%;
+          border: 1px solid black;
+
+          .botao_card {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+        }
+
+      }
+    }
+
   }
 
+  .work_conecta-us {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    font-weight: 600;
+    color: $branco;
+    width: 85%;
+    margin: 0 auto;
+    padding: 1rem 0;
+    background-color: $azul-claro;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+  }
 }
 
-.work_conecta-us {
-  display: flex;
-  justify-content: center;
-  text-decoration: none;
-  font-weight: 600;
-  color: $branco;
-  width: 85%;
-  margin: 0 auto;
-  padding: 1rem 0;
-  background-color: $azul-claro;
-  margin-top: 2rem;
+@media screen and (min-width: 768px) {
+  #body_work {
+    #work {
+      margin-top: 3rem;
+
+      .marca_pagina {
+        height: 5%;
+        padding-left: 10rem;
+
+        .pagina {
+          .logo-rosa-work {
+            position: absolute;
+            left: 135px;
+            display: block;
+          }
+        }
+
+        .titulo-pagina_footer {
+          flex-direction: row;
+          justify-content: space-between;
+
+          .botao_marca-oagina {
+            display: block;
+            text-decoration: none;
+            color: $branco;
+            background-color: $azul-claro;
+            padding: .5rem 2rem;
+            border-radius: 8px;
+          }
+
+          .passar {
+            display: none;
+          }
+        }
+      }
+    }
+
+    .container_cards {
+      .list_cards {
+        .item_desktop {
+          max-width: 500px;
+
+          .header_cards {}
+        }
+      }
+    }
+  }
 }

@@ -3,17 +3,23 @@
 
 #about_body {
   width: 100vw;
-  height: 150vh;
+  height: 300vh;
+
+  .cabecalho {
+    background-color: $branco;
+  }
 
   .about {
     width: 100%;
+    height: 100%;
     background-color: $botao-menu-toggle;
     display: flex;
     flex-direction: column;
-    padding: 3rem 0;
+
 
     .container_about {
-      width: 100%;
+      margin: 0 auto;
+      width: 90%;
       height: 100%;
 
       .container_about_titulo {
@@ -21,27 +27,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 40%;
-
-        .line {
-          padding: 0 1.5rem;
-          width: 45%;
-          display: flex;
-          justify-content: space-between;
-          align-self: flex-start;
-
-          .line__numero-pagina {
-            font-size: .875rem;
-            font-weight: 600;
-            color: $cor-font-ciza-medio;
-          }
-
-          .line__nome-pagina {
-            font-size: .875rem;
-            font-weight: 600;
-            color: $branco;
-          }
-        }
+        height: 20%;
 
         .options_title {
           width: 85%;
@@ -49,22 +35,39 @@
           display: flex;
           flex-direction: column;
 
-          .about__titulo {
-            margin: 1.5rem 0;
-            font-size: 2.5rem;
-            font-weight: 700;
+          .line__nome-pagina {
+            font-size: .875rem;
+            font-weight: 600;
             color: $branco;
+
+
+            span {
+              color: $cor-font-ciza-medio;
+              margin-right: .5rem;
+            }
           }
 
-          .slide_bar {
+          .titles {
             display: flex;
-            justify-content: space-between;
-            align-items: center;
-            width: 100%;
+            flex-direction: column;
 
-            #passar_pagina_about {
-              .passar {
-                padding: 1rem;
+            .about__titulo {
+              margin: 1.5rem 0;
+              font-size: 2.5rem;
+              font-weight: 700;
+              color: $branco;
+            }
+
+            .slide_bar {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              width: 100%;
+
+              #passar_pagina_about {
+                .passar {
+                  padding: 1rem;
+                }
               }
             }
 
@@ -88,7 +91,7 @@
       }
 
       .about_description_container {
-        height: 60%;
+
         width: 85%;
         margin: 3em auto 0 auto;
         display: flex;
@@ -112,7 +115,7 @@
           }
 
           .about_description_botao {
-            margin-top: 1rem;
+            margin-top: 2rem;
             width: 40%;
             padding: 1.2rem 1.2rem;
             text-align: center;
@@ -155,7 +158,29 @@
     }
   }
 
-  .footer_about {
+  footer {
     margin-top: 4rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #about_body {
+    .about {
+      .container_about {
+        .options_title {
+          .container_about_titulo {
+
+            .titles {
+              flex-direction: row;
+            }
+          }
+
+        }
+
+      }
+
+    }
+
+    .container_about_titulo {}
   }
 }

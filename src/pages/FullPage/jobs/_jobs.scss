@@ -1,6 +1,6 @@
 @import '../../../styles/base/variaveis';
 
-.body_jobs {
+#body_jobs {
   width: 100vw;
   height: 200vh;
   background-image: url(../assets/line-jobs.svg);
@@ -12,7 +12,7 @@
   .container_jobs {
     background: linear-gradient(360deg, rgba(255, 255, 255, 0.0001) 0%, rgba(237, 229, 240, 0.504289) 100%);
     width: 100%;
-    height: 185vh;
+    height: 100%;
 
     #jobs {
       width: 85%;
@@ -29,6 +29,12 @@
           font-size: 14px;
           color: $azul-claro;
           font-weight: bold;
+
+          img {
+            display: none;
+            position: absolute;
+            left: 10px;
+          }
         }
 
         .nome_pagina {
@@ -39,6 +45,32 @@
 
         .descricao_pagina {
           color: $cor-font-text-cinza;
+          font-weight: 400;
+          max-width: 260px;
+        }
+
+        .swiper {
+          display: none;
+          width: 100%;
+          height: 40px;
+          max-width: 180px;
+          align-items: center;
+          text-decoration: none;
+          justify-items: flex-end;
+          font-weight: 600;
+          color: $cor-font-cinza-medio-escuro;
+
+          .botao_swiper {
+            width: 35px;
+            height: 35px;
+            background-color: #C897E4;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            margin-right: 15px;
+          }
         }
       }
 
@@ -93,6 +125,47 @@
           }
         }
 
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #body_jobs {
+    background-position: left 120px top 0;
+
+    .container_jobs {
+      #jobs {
+        height: 75%;
+        display: flex;
+        margin-top: 2rem;
+
+        .marca_pagina {
+          width: 100%;
+          max-width: 40%;
+          height: 30%;
+          justify-content: space-between;
+
+          .swiper {
+            display: flex;
+
+          }
+
+          .nome_pagina {
+            font-size: 6.1875rem;
+          }
+
+          .pagina {
+            img {
+              display: block;
+            }
+          }
+        }
+
+        .container_jobs-cards {
+          width: 90%;
+          margin: 0;
+        }
       }
     }
   }

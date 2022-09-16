@@ -1,6 +1,6 @@
 @import '../../../styles/base/variaveis';
 
-.body_services {
+#body_services {
   width: 100vw;
   height: 300vh;
 
@@ -9,12 +9,22 @@
     width: 100%;
     height: 100%;
 
-    .what-wo-do {
+    .marca_pagina {
       width: 85%;
-      margin: 0 auto;
-      height: 20%;
+      margin: 1rem auto 0 auto;
+      max-height: 15%;
+      height: 100%;
 
-      .marca_pagina {
+      .pagina {
+        img {
+          display: none;
+        }
+      }
+
+      .titulo {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
         height: 100%;
       }
     }
@@ -32,15 +42,27 @@
         height: 100%;
         margin: 0 auto;
 
+
         .cards-list {
           display: flex;
           flex-direction: column;
+          justify-content: center;
+          align-items: center;
+
+          width: 100%;
+          height: 100%;
 
           .list {
+            width: 100%;
+
+            height: 40%;
+
             margin-bottom: 1rem;
             background-color: $branco;
-            padding: 3rem 2rem;
             border-radius: 24px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
 
             .list-link {
               text-decoration: none;
@@ -73,18 +95,27 @@
 
     .achievement {
       width: 100%;
-      height: 50%;
       display: flex;
       flex-direction: column;
+      justify-content: center;
+
+      .img_achivements {
+        width: 100%;
+        text-align: center;
+
+        img {
+          width: 100%;
+          max-width: 400px;
+
+        }
+      }
 
       .container_achievement {
         width: 85%;
         margin: 0 auto;
 
-        .marca_pagina {
-          width: 75%;
-          height: 100%;
 
+        .marca_pagina_achievement {
           .pagina {
             font-size: 14px;
             font-weight: 600;
@@ -116,6 +147,9 @@
             color: #000000;
           }
         }
+
+
+
       }
 
       .navegation {
@@ -132,5 +166,71 @@
         }
       }
     }
+  }
+}
+
+@media screen and (min-width: 768px) {
+
+  #body_services {
+    background-image: url(../assets/line-sercices.svg);
+    background-repeat: no-repeat;
+
+    .container_services {
+      .marca_pagina {
+        max-height: 10%;
+        width: 75%;
+        margin-left: 10rem;
+
+        .pagina {
+          img {
+            display: block;
+            position: absolute;
+            left: 80px;
+          }
+        }
+
+        .titulo {
+          margin-top: 2rem;
+          flex-direction: row;
+        }
+      }
+
+      .container_what-we-do__cards {
+        height: 30%;
+
+        .container_cards {
+          height: 65%;
+
+          .cards-list {
+            flex-direction: row;
+            height: 100%;
+
+            .list {
+              height: 95%;
+
+              .list-link {
+                flex-direction: column;
+              }
+
+              &:hover {
+                height: 100%;
+              }
+            }
+          }
+        }
+      }
+
+      .achievement {
+        flex-direction: row-reverse;
+        width: 85%;
+
+        .container_achievement {
+          .marca_pagina_achievement {
+            margin-left: 1rem;
+          }
+        }
+      }
+    }
+
   }
 }

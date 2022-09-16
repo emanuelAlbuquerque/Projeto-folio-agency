@@ -1,6 +1,6 @@
 @import '../../../styles/base/variaveis';
 
-.body_cta {
+#body_cta {
   width: 100vw;
   height: 165vh;
 
@@ -22,10 +22,9 @@
       .rosa {
         position: absolute;
         bottom: -55px;
-        right: -25px;
+        right: -40px;
         z-index: -1;
       }
-
 
       .marca_pagina {
         display: block;
@@ -35,12 +34,12 @@
         margin: 0 0 0 auto;
 
         .pagina {
-          padding-top: 3rem;
+          padding-top: 2rem;
           color: $branco;
         }
 
         .nome_pagina {
-          margin: 2rem 0 1rem 0;
+          margin: 2rem 0 0 0;
           color: $branco;
         }
 
@@ -48,14 +47,84 @@
           margin-bottom: 2rem;
         }
 
-        .apply-now {
 
+
+        .apply-now {
           background-color: $branco;
           text-decoration: none;
           color: $azul-claro;
           font-weight: 600;
           padding: 1rem 1.5rem;
           border-radius: 8px;
+        }
+      }
+    }
+  }
+
+  .cta_desktop {
+    display: none;
+  }
+
+  .footer {
+    margin-top: 4rem;
+  }
+}
+
+
+
+@media screen and (min-width: 768px) {
+  #body_cta {
+    height: 100%;
+    width: 100vw;
+
+    #cta {
+      display: none;
+    }
+
+    .cta_desktop {
+      display: block;
+      width: 90%;
+      margin: 0 auto;
+      height: 100%;
+      margin-bottom: 3rem;
+
+
+      .background {
+        width: 100%;
+        height: 80%;
+        background-image: url(../assets/bg-cta_tablet.svg);
+        background-repeat: no-repeat;
+        border-radius: 24px;
+        display: flex;
+        align-items: center;
+
+        .marca_pagina {
+          height: 70%;
+          margin-left: 2rem;
+
+          .apply-now {
+            text-decoration: none;
+            background-color: $branco;
+            padding: 1rem 2rem;
+            color: $azul-claro;
+            font-weight: 600;
+            text-align: center;
+            width: 30%;
+            border-radius: 8px;
+          }
+
+          .nome_pagina {
+            margin: 2rem 0;
+          }
+
+          .passa_pagina {
+            margin-bottom: 2rem;
+          }
+
+          .pagina,
+          .nome_pagina {
+            color: $branco;
+          }
         }
       }
     }
